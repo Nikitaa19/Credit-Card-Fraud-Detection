@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home.css')}} ">
+    <link rel="icon" href="{{ url_for('static', filename='images/fav.png') }}">
+    <title>Weather DashBoard</title>
+</head>
+<body>
+    <div class="title">
+        <h2>Weather DashBoard</h2>
+    </div>
+    <div class="inputcity">
+        <p>Enter your city name</p>
+    </div>
+    <form id="weatherForm" action="{{ url_for('render_results') }}" method="POST">
+        <input id="weatherInput" type="text" name="cityName"><br>
+         <input id="weatherSubmit" type="submit" value="Submit"></div>
+    </form>
+</body>
+</html>
