@@ -1,4 +1,4 @@
-# Flask Weather App ☀️☔️
+# Weather Forecast Dashboard ☀️☔️
 
 This is a Flask (Python) application that uses api to fetch current weather on basis of city name.
 
